@@ -6,6 +6,7 @@ public class Passenger {
     public String firstName;
     public String lastName;
     public String phoneNumber;
+    public City city;
 
 
     public Passenger(int id, String firstName, String lastName, String phoneNumber) {
@@ -13,5 +14,13 @@ public class Passenger {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
+    }
+
+    public Passenger(int id, String firstName, String lastName, String phoneNumber, City city) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.city = city;
     }
 }
