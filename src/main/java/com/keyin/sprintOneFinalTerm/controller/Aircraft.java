@@ -9,8 +9,8 @@ public class Aircraft {
     public String airlineName;
     public int passengerCapacity;
     public City city;
-    private List<Passenger> passengers;
-    private List<Airport> airports;
+    public List<Passenger> passengers;
+    public List<Airport> airports;
 
     public Aircraft(int id, String type, String airlineName, int passengerCapacity) {
         this.id = id;
