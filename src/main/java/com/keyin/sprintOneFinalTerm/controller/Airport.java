@@ -1,9 +1,34 @@
 package com.keyin.sprintOneFinalTerm.controller;
 
 public class Airport {
+
     public int id;
     public String name;
     public String code;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public Airport(int id, String name, String code) {
         this.id = id;
@@ -15,11 +40,4 @@ public class Airport {
     public String toString() {
         return "Airport ID: " + id + "\nAirport name: " + name + "\nAirport code: " + code;
     }
-
-    public static void main(String[] args) {
-        Airport YYT = new Airport(1, "St. John's International Airport", "YYT");
-        System.out.println(YYT);
-
-    }
-
 }
