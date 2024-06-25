@@ -1,49 +1,34 @@
 package com.keyin.sprintOneFinalTerm.controller;
 
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
-@Service
+@RestController
+@RequestMapping("/cities")
 public class CityController {
-    private List<City> cities = new ArrayList<>();
-    private int cityIdCounter = 1;
 
-    // Add a city
-    public City addCity(City city) {
-        city.setId(cityIdCounter++);
-        cities.add(city);
-        return city;
+    @Autowired
+    private CityService cityService;
+
+    @PostMapping
+    public City addCity(@RequestBody City city) {
+        return cityService.addCity(city);
     }
 
-    // Get a city by id
-    public City getCityById(int id) {
-        for (City city : cities) {
-            if (city.getId() == id) {
-                return city;
-            }
-        }
-        return null;
+    @GetMapping("/{id}")
+    public City getCityById(@PathVariable int id) {
+        return cityService.getCityById(id);
     }
 
-    // Get all cities
+    @GetMapping
     public List<City> getAllCities() {
-        return cities;
+        return cityService.getAllCities();
     }
-    
-    // Add an airport to a city
-    public City addAirportToCity(int cityId, Airport airport) {
-        City city = getCityById(cityId);
-        if (city != null) {
-            List<Airport> airports = city.getAirports();
-            if (airports == null) {
-                airports = new ArrayList<>();
-            }
-            airport.setId(cityIdCounter++);
-            airports.add(airport);
-            city.setAirports(airports);
-        }
-        return city;
+
+    @PostMapping("/{cityId}/airports")
+    public City addAirportToCity(@PathVariable int cityId, @RequestBody Airport airport) {
+        return cityService.addAirportToCity(cityId, airport);
     }
 }
