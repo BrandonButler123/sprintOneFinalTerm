@@ -9,5 +9,5 @@ public class SprintOneFinalTermApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SprintOneFinalTermApplication.class, args);
 	}
-
+	
 }
