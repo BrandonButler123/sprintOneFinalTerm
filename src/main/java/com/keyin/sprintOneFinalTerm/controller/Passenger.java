@@ -3,13 +3,24 @@ import java.util.List;
 
 public class Passenger {
 
-    public int id;
-    public String firstName;
-    public String lastName;
-    public String phoneNumber;
-    public City city;
+    private int id;
+    private String firstName;
+    private String lastName;
+    private String phoneNumber;
+    private City city;
+    private List<Aircraft> aircraft;
 
-    public List<Aircraft> aircraft;
+    public Passenger() {
+    }
+
+    public Passenger(int id, String firstName, String lastName, String phoneNumber, City city, List<Aircraft> aircraft) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.city = city;
+        this.aircraft = aircraft;
+    }
 
     public int getId() {
         return id;
@@ -58,6 +69,4 @@ public class Passenger {
     public void setAircraft(List<Aircraft> aircraft) {
         this.aircraft = aircraft;
     }
-
-    
 }
