@@ -2,9 +2,19 @@ package com.keyin.sprintOneFinalTerm.controller;
 
 public class Airport {
 
-    public int id;
-    public String name;
-    public String code;
+    private int id;
+    private String name;
+    private String code;
+    private City city;
+
+    public Airport() {}
+
+    public Airport(int id, String name, String code, City city) {
+        this.id = id;
+        this.name = name;
+        this.code = code;
+        this.city = city;
+    }
 
     public int getId() {
         return id;
@@ -30,14 +40,11 @@ public class Airport {
         this.code = code;
     }
 
-    public Airport(int id, String name, String code) {
-        this.id = id;
-        this.name = name;
-        this.code = code;
+    public City getCity() {
+        return city;
     }
 
-    @Override
-    public String toString() {
-        return "Airport ID: " + id + "\nAirport name: " + name + "\nAirport code: " + code;
+    public void setCity(City city) {
+        this.city = city;
     }
 }
