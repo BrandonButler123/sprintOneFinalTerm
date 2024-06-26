@@ -19,6 +19,13 @@ public class CityService {
         return city;
     }
 
+
+    // Delete a city
+    public City deleteCity(int id) {
+        cities.removeIf(city -> city.getId() == id);
+        return null;
+    }
+
     // Get a city by id
     public City getCityById(int id) {
         for (City city : cities) {

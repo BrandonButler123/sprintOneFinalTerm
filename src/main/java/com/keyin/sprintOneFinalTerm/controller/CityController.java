@@ -17,6 +17,11 @@ public class CityController {
         return cityService.addCity(city);
     }
 
+    @DeleteMapping("/{id}")
+    public City deleteCity(@PathVariable("id") int id) {
+        return cityService.deleteCity(id);
+    }
+
     @GetMapping("/{id}")
     public City getCityById(@PathVariable int id) {
         return cityService.getCityById(id);
