@@ -23,9 +23,8 @@ public class CityService {
 
 
     // Delete a city
-    public City deleteCity(int id) {
-        cities.removeIf(city -> city.getId() == id);
-        return null;
+    public boolean deleteCity(int id) {
+        return cities.removeIf(city -> city.getId() == id);
     }
 
     // Get a city by id
