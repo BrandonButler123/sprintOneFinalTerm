@@ -42,7 +42,7 @@ public class CityService {
         return cities;
     }
 
-//  Add an airport to a city
+  //Add an airport to a city
     public City addAirportToCity(int cityId, Airport airport) {
         City city = getCityById(cityId);
         if (city != null) {
@@ -50,10 +50,16 @@ public class CityService {
             if (airports == null) {
                 airports = new ArrayList<>();
             }
+            airport.setId(airportIdCounter++);
+            airport.setCity(city);
             airports.add(airport);
             city.setAirports(airports);
         }
         return city;
     }
+
+
+
+
 
 }

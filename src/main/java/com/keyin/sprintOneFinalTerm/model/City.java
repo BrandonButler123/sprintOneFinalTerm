@@ -1,16 +1,23 @@
 package com.keyin.sprintOneFinalTerm.model;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+
+import java.util.ArrayList;
 import java.util.List;
 
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class City {
 
     private int id;
     private String city;
     private String province;
     private int population;
+
     private List<Airport> airports;
 
-    public City() {}
+    public City() {
+        this.airports = new ArrayList<>();
+    }
 
     public City(int id, String city, String province, int population, List<Airport> airports) {
         this.id = id;
@@ -18,6 +25,7 @@ public class City {
         this.province = province;
         this.population = population;
         this.airports = airports;
+        airports = new ArrayList<>();
     }
 
     public int getId() {
@@ -59,4 +67,12 @@ public class City {
     public void setAirports(List<Airport> airports) {
         this.airports = airports;
     }
+
+    public void addToAirports(Airport airport) {
+        if (this.airports == null) {
+            this.airports = new ArrayList<>();
+        }
+        this.airports.add(airport);
+    }
+
 }

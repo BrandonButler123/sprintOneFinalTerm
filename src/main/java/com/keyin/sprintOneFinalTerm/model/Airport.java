@@ -1,10 +1,15 @@
 package com.keyin.sprintOneFinalTerm.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+
+@JsonIgnoreProperties("city")
 public class Airport {
 
     private int id;
     private String name;
     private String code;
+
     private City city;
 
     public Airport() {}
