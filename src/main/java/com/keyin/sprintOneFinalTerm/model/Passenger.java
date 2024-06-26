@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler", "city", "aircraft"})
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Passenger {
 
     private int id;
