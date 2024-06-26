@@ -1,7 +1,10 @@
 package com.keyin.sprintOneFinalTerm.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Passenger {
 
     private int id;

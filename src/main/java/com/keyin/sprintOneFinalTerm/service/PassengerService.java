@@ -39,4 +39,27 @@ public class PassengerService {
     public List<Passenger> getAllPassengers() {
         return passengers;
     }
+
+    // Add a city to a passenger
+    public Passenger addCityToPassenger(int passengerId, City city) {
+        Passenger passenger = getPassengerById(passengerId);
+        if (passenger != null) {
+            passenger.setCity(city);
+        }
+        return passenger;
+    }
+
+    // Add aircraft to a passenger
+    public Passenger addAircraftsToPassenger(int passengerId, Aircraft aircraft) {
+        Passenger passenger = getPassengerById(passengerId);
+        if (passenger != null) {
+            List<Aircraft> aircraftList = passenger.getAircraft();
+            if (aircraftList == null) {
+                aircraftList = new ArrayList<>();
+            }
+            aircraftList.add(aircraft);
+            passenger.setAircraft(aircraftList);
+        }
+        return passenger;
+    }
 }

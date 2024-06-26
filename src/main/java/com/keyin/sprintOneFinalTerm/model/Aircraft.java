@@ -1,7 +1,10 @@
 package com.keyin.sprintOneFinalTerm.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties({"city", "airports", "passengers"})
 public class Aircraft {
 
     private int id;

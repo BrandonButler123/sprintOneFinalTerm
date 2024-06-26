@@ -1,0 +1,101 @@
+[
+  {
+    "city": "St. John's",
+    "province": "NL",
+    "population": 114000,
+    "airports": [{
+      "name": "St. John's International Airport",
+      "code": "YYT"
+    }]
+  },
+  {
+    "city": "Gander",
+    "province": "NL",
+    "population": 12000,
+    "airports": [{
+      "name": "Gander International Airport",
+      "code": "YQX"
+    }]
+  },
+  {
+    "city": "Fredericton",
+    "province": "NB",
+    "population": 58000,
+    "airports": [{
+      "name": "Fredericton International Airport",
+      "code": "YFC"
+    }]
+  },
+  {
+    "city": "Toronto",
+    "province": "ON",
+    "population": 3000000,
+    "airports": [{
+      "name": "Toronto Pearson International Airport",
+      "code": "YYZ"
+    },
+      {
+        "name": "Billy Bishop Toronto City Airport",
+        "code": "YTZ"
+      }]
+  },
+  {
+    "city": "Ottawa",
+    "province": "ON",
+    "population": 1000000,
+    "airports": [{
+      "name": "Ottawa International Airport",
+      "code": "YOW"
+    }]
+  },
+  {
+    "city": "Calgary",
+    "province": "AB",
+    "population": 1300000,
+    "airports": [{
+      "name": "Calgary International Airport",
+      "code": "YYC"
+    },
+      {
+        "name": "Calgary Field Aerodrome",
+        "code": "CRS3"
+      }]
+  },
+  {
+    "city": "Edmonton",
+    "province": "AB",
+    "population": 980000,
+    "airports": [{
+      "name": "Edmonton International Airport",
+      "code": "YEG"
+    }]
+  },
+  {
+    "city": "Vancouver",
+    "province": "BC",
+    "population": 675000,
+    "airports": [{
+      "name": "Vancouver International Airport",
+      "code": "YVR"
+    }]
+  },
+  {
+    "city": "Quebec City",
+    "province": "QC",
+    "population": 542000,
+    "airports": [{
+      "name": "Québec City Jean Lesage International Airport",
+      "code": "YQB"
+    }]
+  },
+  {
+    "city": "Halifax",
+    "province": "NS",
+    "population": 430000,
+    "airports": [{
+      "name": "Halifax Stanfield International Airport",
+      "code": "YHZ"
+    }]
+  }
+
+]
