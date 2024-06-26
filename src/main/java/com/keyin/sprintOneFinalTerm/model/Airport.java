@@ -1,4 +1,4 @@
-package com.keyin.sprintOneFinalTerm.controller;
+package com.keyin.sprintOneFinalTerm.model;
 
 public class Airport {
 

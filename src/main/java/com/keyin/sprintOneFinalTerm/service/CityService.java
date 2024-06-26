@@ -1,5 +1,7 @@
-package com.keyin.sprintOneFinalTerm.controller;
+package com.keyin.sprintOneFinalTerm.service;
 
+import com.keyin.sprintOneFinalTerm.model.Airport;
+import com.keyin.sprintOneFinalTerm.model.City;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

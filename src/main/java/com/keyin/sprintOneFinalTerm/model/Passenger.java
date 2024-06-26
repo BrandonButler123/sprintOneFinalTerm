@@ -1,4 +1,5 @@
-package com.keyin.sprintOneFinalTerm.controller;
+package com.keyin.sprintOneFinalTerm.model;
+
 import java.util.List;
 
 public class Passenger {
