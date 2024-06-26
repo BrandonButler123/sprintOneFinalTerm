@@ -1,0 +1,275 @@
+{
+  "id": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "phoneNumber": "+1234567890",
+  "city": {
+    "id": 1,
+    "city": "Toronto",
+    "province": "ON",
+    "population": 3000000,
+    "airports": [
+      {
+        "id": 1,
+        "name": "Toronto Pearson International Airport",
+        "code": "YYZ"
+      },
+      {
+        "id": 2,
+        "name": "Billy Bishop Toronto City Airport",
+        "code": "YTZ"
+      }
+    ]
+  },
+  "aircraft": [
+    {
+      "id": 1,
+      "type": "Boeing 737",
+      "airlineName": "WestJet",
+      "passengerCapacity": 150
+    }
+  ]
+},
+{
+"id": 2,
+"firstName": "Jane",
+"lastName": "Smith",
+"phoneNumber": "+1987654321",
+"city": {
+"id": 2,
+"city": "Vancouver",
+"province": "BC",
+"population": 675000,
+"airports": [
+{
+"id": 3,
+"name": "Vancouver International Airport",
+"code": "YVR"
+}
+]
+},
+"aircraft": [
+{
+"id": 2,
+"type": "Airbus A320",
+"airlineName": "Air Canada",
+"passengerCapacity": 180
+}
+]
+},
+{
+"id": 3,
+"firstName": "Michael",
+"lastName": "Johnson",
+"phoneNumber": "+1654321876",
+"city": {
+"id": 3,
+"city": "Calgary",
+"province": "AB",
+"population": 1300000,
+"airports": [
+{
+"id": 4,
+"name": "Calgary International Airport",
+"code": "YYC"
+}
+]
+},
+"aircraft": [
+{
+"id": 3,
+"type": "Boeing 747",
+"airlineName": "Air Canada",
+"passengerCapacity": 400
+}
+]
+},
+{
+"id": 4,
+"firstName": "Emily",
+"lastName": "Brown",
+"phoneNumber": "+1432765980",
+"city": {
+"id": 4,
+"city": "Edmonton",
+"province": "AB",
+"population": 980000,
+"airports": [
+{
+"id": 5,
+"name": "Edmonton International Airport",
+"code": "YEG"
+}
+]
+},
+"aircraft": [
+{
+"id": 4,
+"type": "Airbus A380",
+"airlineName": "Air Canada",
+"passengerCapacity": 500
+}
+]
+},
+{
+"id": 5,
+"firstName": "William",
+"lastName": "Davis",
+"phoneNumber": "+1789456123",
+"city": {
+"id": 5,
+"city": "Ottawa",
+"province": "ON",
+"population": 1000000,
+"airports": [
+{
+"id": 6,
+"name": "Ottawa International Airport",
+"code": "YOW"
+}
+]
+},
+"aircraft": [
+{
+"id": 5,
+"type": "Boeing 787",
+"airlineName": "Air Canada",
+"passengerCapacity": 250
+}
+]
+},
+{
+"id": 6,
+"firstName": "Sophia",
+"lastName": "Martinez",
+"phoneNumber": "+1324587960",
+"city": {
+"id": 6,
+"city": "Halifax",
+"province": "NS",
+"population": 430000,
+"airports": [
+{
+"id": 7,
+"name": "Halifax Stanfield International Airport",
+"code": "YHZ"
+}
+]
+},
+"aircraft": [
+{
+"id": 6,
+"type": "Boeing 737",
+"airlineName": "WestJet",
+"passengerCapacity": 150
+}
+]
+},
+{
+"id": 7,
+"firstName": "Oliver",
+"lastName": "Garcia",
+"phoneNumber": "+1876543210",
+"city": {
+"id": 7,
+"city": "Fredericton",
+"province": "NB",
+"population": 58000,
+"airports": [
+{
+"id": 8,
+"name": "Fredericton International Airport",
+"code": "YFC"
+}
+]
+},
+"aircraft": [
+{
+"id": 7,
+"type": "Airbus A320",
+"airlineName": "Air Canada",
+"passengerCapacity": 180
+}
+]
+},
+{
+"id": 8,
+"firstName": "Isabella",
+"lastName": "Lopez",
+"phoneNumber": "+1678904321",
+"city": {
+"id": 8,
+"city": "Quebec City",
+"province": "QC",
+"population": 542000,
+"airports": [
+{
+"id": 9,
+"name": "Québec City Jean Lesage International Airport",
+"code": "YQB"
+}
+]
+},
+"aircraft": [
+{
+"id": 8,
+"type": "Boeing 777",
+"airlineName": "Air Canada",
+"passengerCapacity": 350
+}
+]
+},
+{
+"id": 9,
+"firstName": "Ethan",
+"lastName": "Rodriguez",
+"phoneNumber": "+1543210987",
+"city": {
+"id": 9,
+"city": "St. John's",
+"province": "NL",
+"population": 114000,
+"airports": [
+{
+"id": 10,
+"name": "St. John's International Airport",
+"code": "YYT"
+}
+]
+},
+"aircraft": [
+{
+"id": 9,
+"type": "Airbus A380",
+"airlineName": "Air Canada",
+"passengerCapacity": 500
+}
+]
+},
+{
+"id": 10,
+"firstName": "Ava",
+"lastName": "Miller",
+"phoneNumber": "+1321897654",
+"city": {
+"id": 10,
+"city": "Gander",
+"province": "NL",
+"population": 12000,
+"airports": [
+{
+"id": 11,
+"name": "Gander International Airport",
+"code": "YQX"
+}
+]
+},
+"aircraft": [
+{
+"id": 10,
+"type": "Boeing 787",
+"airlineName": "Air Canada",
+"passengerCapacity": 250
+}
+]
+}
