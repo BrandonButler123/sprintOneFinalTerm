@@ -3,7 +3,7 @@ package com.keyin.sprintOneFinalTerm.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
-@JsonIgnoreProperties("city")
+@JsonIgnoreProperties({"city", "hibernateLazyInitializer", "handler"})
 public class Airport {
 
     private int id;

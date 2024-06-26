@@ -1,0 +1,338 @@
+{
+  "id": 1,
+  "type": "Boeing 737",
+  "airlineName": "Air Canada",
+  "passengerCapacity": 160,
+  "passengers": [
+    {
+      "id": 1,
+      "firstName": "Emily",
+      "lastName": "Smith",
+      "phoneNumber": "+1-416-555-1234"
+    },
+    {
+      "id": 2,
+      "firstName": "James",
+      "lastName": "Johnson",
+      "phoneNumber": "+1-647-555-5678"
+    },
+    {
+      "id": 3,
+      "firstName": "Liam",
+      "lastName": "Williams",
+      "phoneNumber": "+1-905-555-2345"
+    }
+  ]
+},
+{
+"id": 2,
+"type": "Airbus A320",
+"airlineName": "WestJet",
+"passengerCapacity": 180,
+"passengers": [
+{
+"id": 1,
+"firstName": "Sophia",
+"lastName": "Brown",
+"phoneNumber": "+1-519-555-6789"
+},
+{
+"id": 2,
+"firstName": "Oliver",
+"lastName": "Garcia",
+"phoneNumber": "+1-613-555-8901"
+},
+{
+"id": 3,
+"firstName": "Emma",
+"lastName": "Martinez",
+"phoneNumber": "+1-416-555-3456"
+},
+{
+"id": 4,
+"firstName": "William",
+"lastName": "Davis",
+"phoneNumber": "+1-905-555-7890"
+}
+]
+},
+{
+"id": 3,
+"type": "Bombardier Dash 8",
+"airlineName": "Porter Airlines",
+"passengerCapacity": 78,
+"passengers": [
+{
+"id": 1,
+"firstName": "Ava",
+"lastName": "Miller",
+"phoneNumber": "+1-647-555-1234"
+},
+{
+"id": 2,
+"firstName": "Mason",
+"lastName": "Wilson",
+"phoneNumber": "+1-416-555-5678"
+},
+{
+"id": 3,
+"firstName": "Sophia",
+"lastName": "Taylor",
+"phoneNumber": "+1-519-555-2345"
+}
+]
+},
+{
+"id": 4,
+"type": "De Havilland Canada DHC-6 Twin Otter",
+"airlineName": "Harbour Air",
+"passengerCapacity": 19,
+"passengers": [
+{
+"id": 1,
+"firstName": "Ethan",
+"lastName": "Anderson",
+"phoneNumber": "+1-613-555-6789"
+},
+{
+"id": 2,
+"firstName": "Amelia",
+"lastName": "Thomas",
+"phoneNumber": "+1-905-555-3456"
+},
+{
+"id": 3,
+"firstName": "Michael",
+"lastName": "Moore",
+"phoneNumber": "+1-416-555-7890"
+}
+]
+},
+{
+"id": 5,
+"type": "Cessna 208 Caravan",
+"airlineName": "Air Creebec",
+"passengerCapacity": 9,
+"passengers": [
+{
+"id": 1,
+"firstName": "Abigail",
+"lastName": "Clark",
+"phoneNumber": "+1-647-555-1234"
+},
+{
+"id": 2,
+"firstName": "Elijah",
+"lastName": "Rodriguez",
+"phoneNumber": "+1-519-555-5678"
+},
+{
+"id": 3,
+"firstName": "Ella",
+"lastName": "Allen",
+"phoneNumber": "+1-613-555-8901"
+},
+{
+"id": 4,
+"firstName": "Alexander",
+"lastName": "Walker",
+"phoneNumber": "+1-416-555-2345"
+},
+{
+"id": 5,
+"firstName": "Sofia",
+"lastName": "Young",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+},
+{
+"id": 6,
+"type": "Beechcraft King Air",
+"airlineName": "Bearskin Airlines",
+"passengerCapacity": 9,
+"passengers": [
+{
+"id": 1,
+"firstName": "Aiden",
+"lastName": "Lewis",
+"phoneNumber": "+1-613-555-1234"
+},
+{
+"id": 2,
+"firstName": "Madison",
+"lastName": "Hughes",
+"phoneNumber": "+1-519-555-5678"
+},
+{
+"id": 3,
+"firstName": "Charlotte",
+"lastName": "Green",
+"phoneNumber": "+1-647-555-8901"
+},
+{
+"id": 4,
+"firstName": "Lucas",
+"lastName": "Martin",
+"phoneNumber": "+1-416-555-2345"
+},
+{
+"id": 5,
+"firstName": "Benjamin",
+"lastName": "Hall",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+},
+{
+"id": 7,
+"type": "Cessna Citation CJ4",
+"airlineName": "Chartright Air Group",
+"passengerCapacity": 8,
+"passengers": [
+{
+"id": 1,
+"firstName": "Mia",
+"lastName": "Parker",
+"phoneNumber": "+1-519-555-1234"
+},
+{
+"id": 2,
+"firstName": "Jacob",
+"lastName": "Morris",
+"phoneNumber": "+1-416-555-5678"
+},
+{
+"id": 3,
+"firstName": "Liam",
+"lastName": "Cook",
+"phoneNumber": "+1-647-555-8901"
+},
+{
+"id": 4,
+"firstName": "Ava",
+"lastName": "Murphy",
+"phoneNumber": "+1-613-555-2345"
+},
+{
+"id": 5,
+"firstName": "Logan",
+"lastName": "Rossi",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+},
+{
+"id": 8,
+"type": "Airbus A220",
+"airlineName": "Air Canada Rouge",
+"passengerCapacity": 137,
+"passengers": [
+{
+"id": 1,
+"firstName": "Isabella",
+"lastName": "Morris",
+"phoneNumber": "+1-647-555-1234"
+},
+{
+"id": 2,
+"firstName": "William",
+"lastName": "Clark",
+"phoneNumber": "+1-416-555-5678"
+},
+{
+"id": 3,
+"firstName": "Mason",
+"lastName": "Gomez",
+"phoneNumber": "+1-613-555-8901"
+},
+{
+"id": 4,
+"firstName": "Elizabeth",
+"lastName": "Adams",
+"phoneNumber": "+1-519-555-2345"
+},
+{
+"id": 5,
+"firstName": "Ethan",
+"lastName": "Bailey",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+},
+{
+"id": 9,
+"type": "Boeing 787 Dreamliner",
+"airlineName": "Air Transat",
+"passengerCapacity": 250,
+"passengers": [
+{
+"id": 1,
+"firstName": "Emma",
+"lastName": "Hernandez",
+"phoneNumber": "+1-416-555-1234"
+},
+{
+"id": 2,
+"firstName": "Alexander",
+"lastName": "Nelson",
+"phoneNumber": "+1-647-555-5678"
+},
+{
+"id": 3,
+"firstName": "Sophia",
+"lastName": "Carter",
+"phoneNumber": "+1-519-555-8901"
+},
+{
+"id": 4,
+"firstName": "Jacob",
+"lastName": "Baker",
+"phoneNumber": "+1-613-555-2345"
+},
+{
+"id": 5,
+"firstName": "Olivia",
+"lastName": "Rivera",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+},
+{
+"id": 10,
+"type": "Airbus A330",
+"airlineName": "Air Canada",
+"passengerCapacity": 292,
+"passengers": [
+{
+"id": 1,
+"firstName": "Liam",
+"lastName": "Turner",
+"phoneNumber": "+1-416-555-1234"
+},
+{
+"id": 2,
+"firstName": "Ava",
+"lastName": "White",
+"phoneNumber": "+1-647-555-5678"
+},
+{
+"id": 3,
+"firstName": "Noah",
+"lastName": "Scott",
+"phoneNumber": "+1-519-555-8901"
+},
+{
+"id": 4,
+"firstName": "Sophia",
+"lastName": "Green",
+"phoneNumber": "+1-613-555-2345"
+},
+{
+"id": 5,
+"firstName": "James",
+"lastName": "Lewis",
+"phoneNumber": "+1-905-555-6789"
+}
+]
+}
