@@ -2,9 +2,10 @@ package com.keyin.sprintOneFinalTerm.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@JsonIgnoreProperties({"city", "airports", "passengers"})
+@JsonIgnoreProperties({"city", "airports"})
 public class Aircraft {
 
     private int id;
@@ -13,9 +14,11 @@ public class Aircraft {
     private int passengerCapacity;
     private City city;
     private List<Passenger> passengers;
-    private List<Airport> airports;
 
-    public Aircraft(){}
+    public Aircraft() {
+        // Initialize lists to avoid null pointer exceptions
+        this.passengers = new ArrayList<>();
+    }
 
     public Aircraft(int id, String type, String airlineName, int passengerCapacity, City city, List<Passenger> passengers, List<Airport> airports) {
         this.id = id;
@@ -23,8 +26,7 @@ public class Aircraft {
         this.airlineName = airlineName;
         this.passengerCapacity = passengerCapacity;
         this.city = city;
-        this.passengers = passengers;
-        this.airports = airports;
+        this.passengers = (passengers != null) ? passengers : new ArrayList<>();
     }
 
     public int getId() {
@@ -72,14 +74,14 @@ public class Aircraft {
     }
 
     public void setPassengers(List<Passenger> passengers) {
-        this.passengers = passengers;
+        this.passengers = (passengers != null) ? passengers : new ArrayList<>();
     }
 
-    public List<Airport> getAirports() {
-        return airports;
+    public void addPassenger(Passenger passenger) {
+        this.passengers.add(passenger);
     }
 
-    public void setAirports(List<Airport> airports) {
-        this.airports = airports;
+    public void removePassenger(Passenger passenger) {
+        this.passengers.remove(passenger);
     }
 }
