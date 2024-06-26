@@ -1,22 +1,20 @@
-package com.keyin.sprintOneFinalTerm.controller;
-
-import com.keyin.sprintOneFinalTerm.controller.Airport;
+package com.keyin.sprintOneFinalTerm.model;
 
 import java.util.List;
 
 public class City {
 
     private int id;
-    private String name;
+    private String city;
     private String province;
     private int population;
     private List<Airport> airports;
 
     public City() {}
 
-    public City(int id, String name, String province, int population, List<Airport> airports) {
+    public City(int id, String city, String province, int population, List<Airport> airports) {
         this.id = id;
-        this.name = name;
+        this.city = city;
         this.province = province;
         this.population = population;
         this.airports = airports;
@@ -30,12 +28,12 @@ public class City {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCity() {
+        return city;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getProvince() {

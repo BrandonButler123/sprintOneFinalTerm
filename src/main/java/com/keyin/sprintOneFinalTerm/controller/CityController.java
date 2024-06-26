@@ -1,5 +1,8 @@
 package com.keyin.sprintOneFinalTerm.controller;
 
+import com.keyin.sprintOneFinalTerm.model.Airport;
+import com.keyin.sprintOneFinalTerm.model.City;
+import com.keyin.sprintOneFinalTerm.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
