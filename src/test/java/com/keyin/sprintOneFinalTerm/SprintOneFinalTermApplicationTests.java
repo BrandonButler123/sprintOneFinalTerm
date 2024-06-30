@@ -78,10 +78,8 @@ public class SprintOneFinalTermApplicationTests {
     }
 
 
-
-
-	@Test
-	void contextLoads() {
-	}
+     @Test
+     void contextLoads() {
+     }
 
 }
