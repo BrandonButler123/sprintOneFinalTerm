@@ -50,7 +50,7 @@ public class SprintOneFinalTermApplicationTests {
     @Test
     public void testGetAirport() {
         Airport airport = new Airport(1, "St John's Airport");
-        when(airportRepository.findById(1)).thenReturn(Optional.of(airport));
+        when(airportController.findById(1)).thenReturn(Optional.of(airport));
 
         Airport result = airportService.getAirportById(1);
         assertNotNull(result);
@@ -60,7 +60,7 @@ public class SprintOneFinalTermApplicationTests {
     @Test
     public void testGetCity() {
         City city = new City(1, "St John's");
-        when(cityRepository.findById(1)).thenReturn(Optional.of(city));
+        when(cityController.findById(1)).thenReturn(Optional.of(city));
 
         City result = cityService.getCityById(1);
         assertNotNull(result);
@@ -70,7 +70,7 @@ public class SprintOneFinalTermApplicationTests {
     @Test
     public void testGetPassenger() {
         Passenger passenger = new Passenger(1, "John Doe");
-        when(passengerRepository.findById(1)).thenReturn(Optional.of(passenger));
+        when(passengerController.findById(1)).thenReturn(Optional.of(passenger));
 
         Passenger result = passengerService.getPassengerById(1);
         assertNotNull(result);
