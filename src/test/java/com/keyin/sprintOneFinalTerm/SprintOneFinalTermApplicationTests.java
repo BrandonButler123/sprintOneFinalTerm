@@ -1,26 +1,24 @@
 package com.keyin.sprintOneFinalTerm;
 
-import java.beans.Transient;
-import com.keyin.domain.Airport;
-import com.keyin.http.cli.HTTPRestCLIApplication;
-import com.keyin.http.client.RESTClient;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.Mockito;
-import org.mockito.junit.jupiter.MockitoExtension;
-
+import static org.mockito.Mockito.*;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
 import java.util.ArrayList;
 import java.util.List;
 
 
 @SpringBootTest
 public class SprintOneFinalTermApplicationTests {
-	@Mock
+    @Mock
     private AircraftController aircraftController;
 
     @Mock
@@ -49,7 +47,7 @@ public class SprintOneFinalTermApplicationTests {
         MockitoAnnotations.openMocks(this);
     }
 
-	@Test
+    @Test
     public void testGetAirport() {
         Airport airport = new Airport(1, "St John's Airport");
         when(airportRepository.findById(1)).thenReturn(Optional.of(airport));
@@ -59,7 +57,7 @@ public class SprintOneFinalTermApplicationTests {
         assertEquals("St John's Airport", result.getName());
     }
 
-	@Test
+    @Test
     public void testGetCity() {
         City city = new City(1, "St John's");
         when(cityRepository.findById(1)).thenReturn(Optional.of(city));
@@ -69,7 +67,7 @@ public class SprintOneFinalTermApplicationTests {
         assertEquals("St John's", result.getName());
     }
 
-	@Test
+    @Test
     public void testGetPassenger() {
         Passenger passenger = new Passenger(1, "John Doe");
         when(passengerRepository.findById(1)).thenReturn(Optional.of(passenger));
