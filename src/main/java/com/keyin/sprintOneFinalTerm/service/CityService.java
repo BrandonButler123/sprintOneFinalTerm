@@ -42,6 +42,20 @@ public class CityService {
         return cities;
     }
 
+    // Update a city
+    public City updateCity(City updatedCity) {
+        for (City city : cities) {
+            if (city.getId() == updatedCity.getId()) {
+                city.setCity(updatedCity.getCity());
+                city.setProvince(updatedCity.getProvince());
+                city.setPopulation(updatedCity.getPopulation());
+                // You can update other properties as needed
+                return city;
+            }
+        }
+        return null; // Return null if city with given id is not found
+    }
+
   //Add an airport to a city
     public City addAirportToCity(int cityId, Airport airport) {
         City city = getCityById(cityId);
