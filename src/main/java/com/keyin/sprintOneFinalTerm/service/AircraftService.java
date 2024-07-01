@@ -55,5 +55,19 @@ public class AircraftService {
             aircraft.removePassenger(passenger);
         }
     }
+
+    // Update an aircraft
+    public Aircraft updateAircraft(int id, Aircraft updatedAircraft) {
+        Aircraft existingAircraft = getAircraftById(id);
+        if (existingAircraft != null) {
+            existingAircraft.setType(updatedAircraft.getType());
+            existingAircraft.setAirlineName(updatedAircraft.getAirlineName());
+            existingAircraft.setPassengerCapacity(updatedAircraft.getPassengerCapacity());
+            existingAircraft.setPassengers(updatedAircraft.getPassengers());
+            existingAircraft.setCity(updatedAircraft.getCity());
+        }
+        return existingAircraft;
+    }
+
 }
 

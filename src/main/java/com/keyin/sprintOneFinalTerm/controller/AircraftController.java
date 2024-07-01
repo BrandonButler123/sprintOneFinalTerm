@@ -40,6 +40,11 @@ public class AircraftController {
         aircraftService.addPassengerToAircraft(aircraftId, passenger);
     }
 
+    @PutMapping("/{id}")
+    public Aircraft updateAircraft(@PathVariable int id, @RequestBody Aircraft updatedAircraft) {
+        return aircraftService.updateAircraft(id, updatedAircraft);
+    }
+
     @DeleteMapping("/{aircraftId}/passengers")
     public void removePassengerFromAircraft(@PathVariable int aircraftId, @RequestBody Passenger passenger) {
         aircraftService.removePassengerFromAircraft(aircraftId, passenger);
