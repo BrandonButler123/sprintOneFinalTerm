@@ -45,4 +45,10 @@ public class PassengerController {
     public Passenger addCityToPassenger(@PathVariable int passengerId, @RequestBody City city) {
         return passengerService.addCityToPassenger(passengerId, city);
     }
+
+    @PutMapping("/{id}")
+    public Passenger updatePassenger(@PathVariable int id, @RequestBody Passenger updatedPassenger) {
+        return passengerService.updatePassenger(id, updatedPassenger);
+    }
+
 }

@@ -62,4 +62,17 @@ public class PassengerService {
         }
         return passenger;
     }
+
+    // Update a passenger
+    public Passenger updatePassenger(int id, Passenger updatedPassenger) {
+        Passenger existingPassenger = getPassengerById(id);
+        if (existingPassenger != null) {
+            existingPassenger.setFirstName(updatedPassenger.getFirstName());
+            existingPassenger.setLastName(updatedPassenger.getLastName());
+            existingPassenger.setPhoneNumber(updatedPassenger.getPhoneNumber());
+            existingPassenger.setCity(updatedPassenger.getCity()); // Assuming city should be updated
+            existingPassenger.setAircraft(updatedPassenger.getAircraft()); // Assuming aircraft should be updated
+        }
+        return existingPassenger;
+    }
 }

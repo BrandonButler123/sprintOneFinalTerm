@@ -72,4 +72,5 @@ public class Passenger {
     public void setAircraft(List<Aircraft> aircraft) {
         this.aircraft = aircraft;
     }
+
 }
