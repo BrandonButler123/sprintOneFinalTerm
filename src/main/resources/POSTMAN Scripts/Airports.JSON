@@ -1,0 +1,56 @@
+[
+  {
+    "name": "St. John's International Airport",
+    "code": "YYT"
+  },
+
+  {
+    "name": "Vancouver International Airport",
+    "code": "YVR"
+  },
+
+  {
+    "name": "Toronto Pearson International Airport",
+    "code": "YYZ"
+  },
+
+  {
+    "name": "Montréal-Pierre Elliott Trudeau International Airport",
+    "code": "YUL"
+  },
+
+  {
+    "name": "Calgary International Airport",
+    "code": "YYC"
+  },
+
+  {
+    "name": "Edmonton International Airport",
+    "code": "YEG"
+  },
+
+  {
+    "name": "Ottawa Macdonald-Cartier International Airport",
+    "code": "YOW"
+  },
+
+  {
+    "name": "Winnipeg James Armstrong Richardson International Airport",
+    "code": "YWG"
+  },
+
+  {
+    "name": "Halifax Stanfield International Airport",
+    "code": "YHZ"
+  },
+
+  {
+    "name": "Quebec City Jean Lesage International Airport",
+    "code": "YQB"
+  },
+  {
+    "name": "Victoria International Airport",
+    "code": "YYJ"
+  }
+]
+
